@@ -1,0 +1,26 @@
+
+
+<div class="slider-box ">
+    <div class="flex slider-main">
+      <span class="arrow-back">
+        <mat-icon class="icon-size" (click)="goToPrevious()" aria-hidden="false" aria-label="arrowback" fontIcon="keyboard_arrow_left"></mat-icon>
+      </span>
+      <div class="img-slider" [ngStyle]="{'background-image': getCurrentSliderUrl()}"></div>
+        
+
+      
+      <div class="paragraf-slider">
+      <p>
+                Aroko Bioengineering Co
+        Manufacturer and consultant of all kinds of process equipment and biotechnology, Design based on ASME-BPE, Automation compliance with 21 CFR Part 11 and Gamp5
+      </p>
+      </div>
+      <span class="arrow-forward">
+        <mat-icon class="icon-size" (click)="goToNext()" aria-hidden="false" aria-label="arrowback" fontIcon="keyboard_arrow_right"></mat-icon>
+      </span>
+      <div class="bullet-bar">
+        <div *ngFor="let slide of slides let slideIndex = index" class="dot" (click)="goToSlides(slideIndex)" [ngClass]="{active:slideIndex === currentIndex}"></div>
+      </div>
+    </div>
+  </div>
+  <div class="slide" >

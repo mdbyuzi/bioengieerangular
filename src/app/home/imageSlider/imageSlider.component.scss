@@ -1,0 +1,82 @@
+.slider-box {
+    .slider-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .img-slider{
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 98vh;
+                width: 100%;
+                transition: all 1s;
+            }
+        .img-slider::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: 0;
+        }
+        .paragraf-slider {
+            position: absolute;
+            color: white;
+            font-size: 25px;
+            width: 50%;
+        }
+
+        .arrow-back,
+        .arrow-forward {
+            position: absolute;
+            width: 50px;
+            top: 50%;
+            right: 0px;
+            color: rgb(182, 182, 182);
+            margin: 0px 20px;
+            transition: all 300ms;
+            z-index: 1;
+            .icon-size {
+                height: 40px;
+                width: inherit;
+                font-weight: 100;
+                font-size: 40px;
+            }
+
+        }
+
+        .arrow-back:hover,
+        .arrow-forward:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .arrow-back {
+            left: 0px;
+        }
+
+        .bullet-bar {
+            position: absolute;
+            display: flex;
+            bottom: 30px;
+            .active{
+                background-color: #9275c1;
+            }
+
+            div {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                border: 2px solid white;
+                margin: 4px;
+                transition: all 300ms;
+
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgb(192, 25, 238);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.footer-container {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to bottom, #454057, rgba(0, 0, 0, 0.801));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 0px;
+        color: white;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        height: 80%;
+        .before-list {
+            display: flex;
+            position: relative;
+        }
+
+        .before-list::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 2px;
+            margin: 10px 0px;
+            background-color: rgb(158, 112, 204);
+        }
+
+        li {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.4;
+            justify-content: center;
+            align-items: start;
+            margin: 10px;
+
+            &,ul {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+
+                li {
+                  
+
+                    &:hover {
+                        color: rgb(158, 112, 204);
+                    }
+
+                    font-weight: normal;
+                    display: flex;
+                    justify-content: start;
+                    flex-direction: row;
+                    font-size: 15px;
+
+                    span {
+                        font-weight: bold;
+                        color: #ba97da;
+                        margin-right: 5px;
+                    }
+                    p{
+                        -ms-user-select: text;
+                        -webkit-user-select: text;
+                        user-select: text;
+                    }
+                    p:hover{
+                        color: wheat;
+                    }
+                }
+
+                li::marker {
+                    color: green;
+
+                }
+
+            }
+
+        }
+
+
+    }
+}

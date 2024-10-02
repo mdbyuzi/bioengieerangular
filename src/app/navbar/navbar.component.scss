@@ -1,0 +1,94 @@
+.nav-container{
+    header{
+       display: flex;
+       background-color: rgba(255, 255, 255, 0.151);
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .nav-list{
+        font-size: 15px;
+        font-family: Arial, Helvetica, Verdana, sans-serif;
+        height: 108px;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    .nav-list ul{
+        display: flex;
+    }
+    .nav-list ul li{
+        display: flex;
+        align-items: center;
+        padding: 12px 10px;
+        &:hover{
+            color:#9275c1;
+        }
+        span{
+            margin-top: 3px;
+        }
+        cursor: pointer;
+        ul{
+            display: flex;
+            position: absolute;
+            top:90px;
+            margin: auto;
+            flex-direction: column;
+            z-index: -999;
+            opacity: 0;
+            transition: all 300ms;
+            background-color: rgba(255, 255, 255, 0.714);
+            width: 20%;
+            visibility: hidden;
+            li{
+                width: 100%;
+
+                color: black;
+            }
+        }
+        &:hover ul{
+            visibility: visible;
+            z-index: 1;
+            opacity: 1;
+            backdrop-filter: blur(2px);
+            width: 15%;
+            li:hover{
+                color: white;
+                background-color: #454057;
+                visibility: visible;
+            }
+        }
+
+    }
+    header .logo{
+        margin: auto 30px;
+        width: 50px;
+    }
+    header .search-box span .search-icon{
+        color: white;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        &:hover{
+            color: #9275c1;
+        }
+       
+    }
+    header .search-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        .search-space{
+            transition: all 1s;
+        width: 0px;
+        height: 40px;
+        background-color: wheat;
+        &.active{
+            width: 100px;
+            background-color: red;
+        }
+
+    }
+}
+}

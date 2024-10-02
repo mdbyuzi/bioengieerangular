@@ -22,10 +22,10 @@ import { FooterComponent } from '../footer/footer.component';
 export class HomeComponent {
 
   slides: SliderInterface[] = [
-    {url:"/assets/wallpeper/1707970726619.jpg",title:""},
-    {url:"/assets/wallpeper/BTEC_Bioreactors.jpg",title:""},
-    {url:"/assets/wallpeper/Dreamly_A_striking_image_of_a_fully_automated_filtration_system_490aff72-f9f7-423a-841d-db3d2ee7723e-1.png",title:""},
-    {url:"/assets/wallpeper/GMAW.jpg",title:""}
+    {url:"assets/wallpeper/1707970726619.jpg",title:""},
+    {url:"assets/wallpeper/BTEC_Bioreactors.jpg",title:""},
+    {url:"assets/wallpeper/Dreamly_A_striking_image_of_a_fully_automated_filtration_system_490aff72-f9f7-423a-841d-db3d2ee7723e-1.png",title:""},
+    {url:"assets/wallpeper/GMAW.jpg",title:""}
 
   ]
 }

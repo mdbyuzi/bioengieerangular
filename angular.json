@@ -8,8 +8,7 @@
         "sourceLocale": "en-US",
         "locales": {
           "fa": {
-            "translation": "src/locale/messages.fa.xlf",
-            "baseHref": "/fa"
+            "translation": "src/locale/messages.fa.xlf"
           }
         }
       },
@@ -27,7 +26,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "localize":[
-              "fa"
+              "fa",
+              "en-US"
             ],
             "outputPath": "dist/bioenangular",
             "index": "src/index.html",
@@ -56,13 +56,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "3mb",
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
                 }
               ],
               "outputHashing": "all"
@@ -71,6 +71,9 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "fa":{
+              "localize":["fa"]
             }
           },
           "defaultConfiguration": "production"

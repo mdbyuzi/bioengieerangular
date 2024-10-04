@@ -37,7 +37,7 @@
             opacity: 0;
             transition: all 300ms;
             background-color: rgba(255, 255, 255, 0.714);
-            width: 20%;
+            width: 16%;
             visibility: hidden;
             li{
                 width: 100%;
@@ -76,19 +76,26 @@
     }
     header .search-box {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
         .search-space{
+        .input-search{
+            width: 0%;
+            height: 35px;
             transition: all 1s;
-        width: 0px;
-        height: 40px;
-        background-color: wheat;
-        &.active{
-            width: 100px;
-            background-color: red;
+            border-radius: 10px;
+            background-color: white;
+                &.active{
+                    width: 90%;
+                    background-color: #511fa245;
+                    padding-left: 4px;
+                }
+            outline: none;
         }
 
+
+        
     }
 }
 }

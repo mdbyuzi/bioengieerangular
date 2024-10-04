@@ -1,6 +1,7 @@
 import { NgClass } from '@angular/common';
 import { Component, Inject, inject, LOCALE_ID } from '@angular/core';
 import { MatIconModule } from "@angular/material/icon"
+
 @Component({
   selector: 'app-navbar-component',
   standalone: true,
@@ -66,7 +67,8 @@ import { MatIconModule } from "@angular/material/icon"
               <span> 
                 <mat-icon (click)="SearchOpen()" aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
               </span>
-              <div class="search-space" [ngClass]="{'active':ToggleMouse}">
+              <div class="search-space" >
+                <input class="input-search" placeholder="متن خود را جستجو کنید؟" [ngClass]="{'active':ToggleMouse}" type="text" >
               </div>
               
             </div>
